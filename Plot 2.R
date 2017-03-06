@@ -14,3 +14,7 @@
       
 #Create Plot
       plot(subpwr$timestmp,subpwr$gactive,type = "l",xlab = "", ylab = "Global Active Power (kilowatts)")
+#Copy to PNG 
+      dev.copy(png, file = "Plot2.png")
+      dev.off()
+
