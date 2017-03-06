@@ -13,3 +13,6 @@
       
 #Create histogram
       hist(subpwr$gactive, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
+#Copy to PNG
+      dev.copy(png, file = "Plot1.png")
+      dev.off()
