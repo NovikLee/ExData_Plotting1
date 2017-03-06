@@ -29,3 +29,7 @@
       with(subpwr,lines(timestmp,submeter3, col = "blue"))
       legend("topright",lty = 1, col = c("black","red","blue"), legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
       plot(subpwr$timestmp,subpwr$greactive,type = "l",xlab = "datetime",ylab = "Global_reactive_power")
+
+#Copy to PNG
+      dev.copy(png, file = "Plot4.png")
+      dev.off()
